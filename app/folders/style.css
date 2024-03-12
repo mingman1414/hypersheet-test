@@ -1,0 +1,34 @@
+.has-scrollbar { padding-bottom: 5px; }
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 5px; /* for vertical scroll */
+  height: 5px; /* for horizontal scroll */
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 3px solid var(--white);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 63%); }
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
+
+.hover-div {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 150px;
+  cursor: pointer;
+}
+
+.icon {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon.visible {
+  opacity: 1;
+}
